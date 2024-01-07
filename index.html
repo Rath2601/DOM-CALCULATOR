@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css"/>
+</head>
+<body>
+    <div id="calculator">
+        <div>
+            <h1 id="title">Basic Calculator</h1>
+            <p id="description">A calculator is a device that performs arithmetic operations on numbers. Basic calculators can do only addition, subtraction, multiplication and division mathematical calculations.</p>
+            <input id="result" style="font-size:25px;" type="text" />
+        </div>
+        <div class="firstRow">
+            <button onclick="clearFunction()" id="clear"><img class="imgs" src="copyright-symbol.png"/></button>
+            <button onclick="delFunction()"><img class="imgs" src="left-arrow.png"/></button>
+            <button onclick="appendToDisplay('.')" id="dot"><img class="imgs" src="full-stop.png"/></button>
+            <button onclick="appendToDisplay('*')" id="multiply">X</button>
+        </div>
+        <div id="secondRow">
+            <button onclick="appendToDisplay('7')" id="7">7</button>
+            <button onclick="appendToDisplay('8')" id="8">8</button>
+            <button onclick="appendToDisplay('9')" id="9">9</button>
+            <button onclick="appendToDisplay('/')" id="divide">/</button>
+        </div>
+        <div id="thirdRow">
+            <button onclick="appendToDisplay('4')" id="4">4</button>
+            <button onclick="appendToDisplay('5')" id="5">5</button>
+            <button onclick="appendToDisplay('6')" id="6">6</button>
+            <button onclick="appendToDisplay('-')" id="subtract">-</button>
+        </div>
+        <div id="fourthRow">
+            <button onclick="appendToDisplay('1')" id="1">1</button>
+            <button onclick="appendToDisplay('2')" id="2">2</button>
+            <button onclick="appendToDisplay('3')" id="3">3</button>
+            <button onclick="appendToDisplay('+')" id="add">+</button>
+        </div>
+        <div id="fifthRow">
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('00')">00</button>
+            <button onclick="calculateResult()" id="equal">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    
+</body>
+</html>
